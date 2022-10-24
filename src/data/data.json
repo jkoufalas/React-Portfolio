@@ -17,18 +17,49 @@
   },
   {
     "project_name": "WhatsOn!",
-    "github_link": "https://github.com/jkoufalas/codeIt",
-    "demo_image": "/Images/codeIt.png",
-    "deployed_link": "https://mysterious-journey-75550.herokuapp.com/",
+    "github_link": "https://github.com/jkoufalas/WhatsOn",
+    "demo_image": "/Images/WhatsOn.png",
+    "deployed_link": "https://jkoufalas.github.io/CSS-GIT-Basics/index.html",
+    "skills": ["CSS(Bulmar)", "Javascript", "JQuery", "Web APIs"]
+  },
+  {
+    "project_name": "Social Network API",
+    "github_link": "https://github.com/jkoufalas/Social-Network-API",
+    "demo_image": "/Images/SocialNetworkAPI.png",
+    "deployed_link": "https://github.com/jkoufalas/Social-Network-API",
+    "skills": ["MongoDB", "Mongoose", "NodeJS", "ExpressJS"]
+  },
+  {
+    "project_name": "Tech Blog",
+    "github_link": "https://github.com/jkoufalas/Tech-Blog",
+    "demo_image": "/Images/TechBlog.png",
+    "deployed_link": "https://nameless-peak-21981.herokuapp.com/",
     "skills": [
-      "NodeJS",
-      "ExpressJS",
+      "MySql",
       "Sequelizer (ORM)",
-      "HandlebarsJS",
-      "MySQL",
-      "Nodemailer",
-      "Tailwind (CSS)",
-      "BCrypt"
+      "Bootstrap (CSS)",
+      "NodeJS",
+      "ExpressJS"
+    ]
+  },
+  {
+    "project_name": "Note Taker",
+    "github_link": "https://github.com/jkoufalas/Note-Taker",
+    "demo_image": "/Images/NoteTaker.png",
+    "deployed_link": "https://mighty-coast-61829.herokuapp.com/",
+    "skills": ["NodeJS", "ExpressJS"]
+  },
+  {
+    "project_name": "J.A.T.E. Text Editor",
+    "github_link": "https://github.com/jkoufalas/Text-Editor",
+    "demo_image": "/Images/TextEditor.png",
+    "deployed_link": "https://desolate-citadel-05719.herokuapp.com/",
+    "skills": [
+      "Manifest",
+      "Service Workers",
+      "Javascript",
+      "Webpack",
+      "Progressive Web Application"
     ]
   }
 ]
