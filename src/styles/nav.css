@@ -15,7 +15,6 @@ header {
 
 .heading {
   display: inline;
-
   font-family: "Kaushan Script", cursive;
   font-size: 50px;
   font-weight: bold;
@@ -57,6 +56,7 @@ header nav ul {
 
 /* styles each link in the nav menu */
 .nav-item {
+  font-family: "Kaushan Script", cursive;
   padding: 10px;
   /* font-size: 2vw; */
 
