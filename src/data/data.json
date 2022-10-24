@@ -1,0 +1,34 @@
+[
+  {
+    "project_name": "CodeIt",
+    "github_link": "https://github.com/jkoufalas/codeIt",
+    "demo_image": "/Images/codeIt.png",
+    "deployed_link": "https://mysterious-journey-75550.herokuapp.com/",
+    "skills": [
+      "NodeJS",
+      "ExpressJS",
+      "Sequelizer (ORM)",
+      "HandlebarsJS",
+      "MySQL",
+      "Nodemailer",
+      "Tailwind (CSS)",
+      "BCrypt"
+    ]
+  },
+  {
+    "project_name": "WhatsOn!",
+    "github_link": "https://github.com/jkoufalas/codeIt",
+    "demo_image": "/Images/codeIt.png",
+    "deployed_link": "https://mysterious-journey-75550.herokuapp.com/",
+    "skills": [
+      "NodeJS",
+      "ExpressJS",
+      "Sequelizer (ORM)",
+      "HandlebarsJS",
+      "MySQL",
+      "Nodemailer",
+      "Tailwind (CSS)",
+      "BCrypt"
+    ]
+  }
+]
