@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/resume.css";
 
 export default function Resume() {
   return (
@@ -6,10 +7,12 @@ export default function Resume() {
       <span className="heading">Resume</span>
       <br />
       <br />
-      <span className="resume">Download my </span>
-      <a href="/Documents/Resume.pdf" download>
-        Resume
-      </a>
+      <span className="resume">
+        Download my&nbsp;
+        <a className="download-link" href="/Documents/Resume.pdf" download>
+          Resume
+        </a>
+      </span>
       <br />
       <br />
       <h3> Front-end Proficiencies</h3>

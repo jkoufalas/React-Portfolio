@@ -11,7 +11,9 @@ export default function Content({
   return (
     <div className="middle">
       <div className="projectTitle">
-        <a href={deployedLink}>{projectName} &nbsp; &nbsp;</a>
+        <a className="projectLink" href={deployedLink}>
+          {projectName} &nbsp; &nbsp;
+        </a>
         <span className="gitLink">
           <a href={gitHubLink}>
             <FontAwesomeIcon icon={faGithub} />

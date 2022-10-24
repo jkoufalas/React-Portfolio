@@ -66,6 +66,10 @@
   opacity: 0.5;
 }
 
+.projectLink {
+  color: rgb(131, 24, 24);
+}
+
 .gallery_product:hover .gitLink:hover {
   transition: 0.5s ease;
   opacity: 1;
