@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function Portfolio(props) {
-  console.log(props.imageLocation);
   return (
     <div className="image-container">
       {/* each image is its own component */}
