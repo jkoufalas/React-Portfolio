@@ -10,11 +10,7 @@ export default function Resume() {
       <br />
       <span className="resume">
         Download my&nbsp;
-        <a
-          className="download-link"
-          href="/React-Portfolio/Documents/Resume.pdf"
-          download
-        >
+        <a className="download-link" href="/Documents/Resume.pdf" download>
           Resume
         </a>
       </span>
