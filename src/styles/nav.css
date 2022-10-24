@@ -13,6 +13,16 @@ header {
   background-color: var(--dark);
 }
 
+.heading {
+  display: inline;
+
+  font-family: "Kaushan Script", cursive;
+  font-size: 50px;
+  font-weight: bold;
+  width: 40%;
+  text-align: center;
+}
+
 /* The title that includes my name on the left of the header */
 header h1 {
   position: relative;

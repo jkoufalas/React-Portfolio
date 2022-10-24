@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
@@ -32,6 +33,7 @@ export default function PortfolioContainer() {
       {/* // TODO: Add a comment explaining what is happening on the following line
       It runs the method where it uses the stae variable to render the page */}
       {renderPage()}
+      <Footer />
     </div>
   );
 }

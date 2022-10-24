@@ -1,0 +1,28 @@
+.contact-form {
+  align-items: baseline;
+}
+
+.form {
+  margin: 20px;
+  width: 70%;
+}
+
+.form div {
+  margin: 0 auto;
+}
+
+.form input {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.form label {
+  font-weight: bold;
+}
+
+textarea {
+  height: 80px;
+  width: 100%;
+}
