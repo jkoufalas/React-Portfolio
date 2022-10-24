@@ -43,4 +43,4 @@ The link to the deployed website of the assignment is <br>
 
 This image provides a sample of the completed website.
 
-![This professional portfolio holds link to all my work that demonstrates my skills.](./assets/Images/jkoufalas.github.io.jpg)
+![This professional portfolio holds link to all my work that demonstrates my skills.](./assets/screenshot.png)
