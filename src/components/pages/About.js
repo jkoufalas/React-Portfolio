@@ -1,6 +1,7 @@
 import React from "react";
 import portrait from "../../Images/Portrait.png";
 import "../../styles/about.css";
+//setup imports
 
 export default function About() {
   return (

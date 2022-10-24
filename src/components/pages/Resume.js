@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles/resume.css";
 
 export default function Resume() {
+  const locationResume = process.env.PUBLIC_URL + "/Documents/Resume.pdf";
   return (
     <div className="container">
       {/* this page just holds the resume content */}
@@ -10,7 +11,7 @@ export default function Resume() {
       <br />
       <span className="resume">
         Download my&nbsp;
-        <a className="download-link" href="/Documents/Resume.pdf" download>
+        <a className="download-link" href={locationResume} download>
           Resume
         </a>
       </span>
