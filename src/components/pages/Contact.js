@@ -20,16 +20,26 @@ export default function Contact() {
       if (!email) {
         setErrorMessage(`Email is invalid`);
         return;
+      } else if (!validateEmail(email)) {
+        console.log("got here OK");
+        setErrorMessage(`Email is invalid!`);
+        return;
+      } else {
+        setErrorMessage(``);
       }
     } else if (inputType === "name") {
       if (!name) {
         setErrorMessage(`Name is invalid`);
         return;
+      } else {
+        setErrorMessage(``);
       }
     } else {
       if (!email) {
         setErrorMessage(`No Message has been Entered`);
         return;
+      } else {
+        setErrorMessage(``);
       }
     }
   };
