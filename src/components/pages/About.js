@@ -5,7 +5,7 @@ import "../../styles/about.css";
 
 export default function About() {
   return (
-    <div className="container">
+    <div className="aboutMe">
       <span className="heading">About Me</span>
       <br />
       <br />

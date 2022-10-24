@@ -4,12 +4,13 @@
   --light: rgb(41, 175, 216);
 }
 
+.portfolio {
+  padding: 50px;
+}
+
 .gallery_product {
-  flex: 0 0 50%;
   padding: 0px 5px 5px 5px;
-
-  margin-bottom: -50px;
-
+  margin-bottom: -65px;
   line-height: 0;
 }
 
@@ -21,7 +22,7 @@
 }
 
 .image-container {
-  border-width: 9px;
+  border-width: 15px;
 }
 
 .image {
@@ -50,7 +51,6 @@
   left: 50%;
   background-color: var(--light);
   border: var(--light) solid;
-  border-width: 10px;
   padding: 0px 10px 0px 10px;
   line-height: 100%;
 }
@@ -90,6 +90,10 @@ a {
 }
 
 @media screen and (max-width: 992px) {
+  .gallery_product {
+    margin-bottom: -60px;
+  }
+
   .middle {
     font-size: 22px;
   }
@@ -100,8 +104,9 @@ a {
 }
 @media screen and (max-width: 768px) {
   .gallery_product {
-    flex: 0 0 100%;
+    margin-bottom: -45px;
   }
+
   .middle {
     font-size: 20px;
   }
@@ -111,6 +116,9 @@ a {
   }
 }
 @media screen and (max-width: 410px) {
+  .gallery_product {
+    margin-bottom: -35px;
+  }
   .middle {
     font-size: 13px;
   }

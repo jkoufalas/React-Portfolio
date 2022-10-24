@@ -8,17 +8,17 @@ const projectData = require("../../data/data.json");
 // get all projects from json file
 export default function Portfolio() {
   return (
-    <div className="container">
+    <div className="portfolio">
       {/* this governs the whole portfolio page */}
       <span className="heading">Portfolio</span>
       <br />
       <br />
-      <div className="row d-flex flex-row">
+      <div className="row d-flex flex-row" id="portfolioContainer">
         {/* flex for the group of projects */}
         {projectData.map((data) => (
           //map each project and create an entry for each
           <figure
-            className="gallery_product col-2 filter hdpe"
+            className="gallery_product col-12 col-md-6 justify-content-center"
             key={data.project_name}
           >
             {/* implement image */}
