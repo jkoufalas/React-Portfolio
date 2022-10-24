@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
 import "../../styles/form.css";
+//setup imports
 
 export default function Contact() {
   // Create state variables for the fields in the form
@@ -9,6 +10,29 @@ export default function Contact() {
   const [name, setname] = useState("");
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+
+  const handleLoseFocus = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+
+    // Based on the input type, we set the state of either email, name, and message
+    if (inputType === "email") {
+      if (!email) {
+        setErrorMessage(`Email is invalid`);
+        return;
+      }
+    } else if (inputType === "name") {
+      if (!name) {
+        setErrorMessage(`Name is invalid`);
+        return;
+      }
+    } else {
+      if (!email) {
+        setErrorMessage(`No Message has been Entered`);
+        return;
+      }
+    }
+  };
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -40,6 +64,12 @@ export default function Contact() {
       setErrorMessage(`Name is invalid`);
       return;
     }
+
+    if (!message) {
+      setErrorMessage(`No Message has been Entered`);
+      return;
+    }
+
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setname("");
     setMessage("");
@@ -48,40 +78,47 @@ export default function Contact() {
 
   return (
     <div className="container contact-form">
+      {/* sets up the form */}
       <span className="heading">Contact</span>
-      <form className="form col-lg-6 offset-lg-3">
+      <form className="form d-flex">
         <div className="row justify-content-center">
-          <label for="name">Name:</label>
+          <label>Name:</label>
           <input
             value={name}
             name="name"
             onChange={handleInputChange}
+            onBlur={handleLoseFocus}
             type="text"
             placeholder="name"
+            id="name"
           />
-          <label for="email">Email:</label>
+          <label>Email:</label>
           <input
             value={email}
             name="email"
             onChange={handleInputChange}
+            onBlur={handleLoseFocus}
             type="email"
             placeholder="email"
           />
-          <label for="message">Message:</label>
+          <label>Message:</label>
           <textarea
             value={message}
             name="message"
             onChange={handleInputChange}
+            onBlur={handleLoseFocus}
             type="textarea"
             placeholder="message"
           />
         </div>
       </form>
+      {/* error message displays when there is a problem */}
       {errorMessage && (
         <div>
           <p className="error-text">{errorMessage}</p>
         </div>
       )}
+      {/* form submit */}
       <button type="button" onClick={handleFormSubmit}>
         Submit
       </button>

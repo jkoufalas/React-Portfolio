@@ -4,6 +4,7 @@ import "../../styles/resume.css";
 export default function Resume() {
   return (
     <div className="container">
+      {/* this page just holds the resume content */}
       <span className="heading">Resume</span>
       <br />
       <br />

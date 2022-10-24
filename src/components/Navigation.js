@@ -10,14 +10,17 @@ function NavTabs({ currentPage, handlePageChange }) {
       $("#navbarNavDropdown").toggleClass("active");
     });
   });
+  //this governs when the burger bar is pressed
 
   return (
     <div className="container">
+      {/* sets up the navbar */}
       <nav className="navbar navbar-expand-md navbar-light w-100" id="neubar">
         <div
           className="container-fluid d-flex justify-content-end"
           id="navOption"
         >
+          {/* sets up the burger button */}
           <button
             className="navbar-toggler hamburger-button"
             type="button"
@@ -27,6 +30,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
+            {/* this is the animated icon where all the spans represent a different bar to animate */}
             <div className="animated-icon">
               <span></span>
               <span></span>
@@ -35,14 +39,14 @@ function NavTabs({ currentPage, handlePageChange }) {
             </div>
           </button>
 
+          {/* the main nav area */}
           <div className=" collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="nav" id="navList">
               <li className="nav-item">
+                {/* about button */}
                 <a
                   href="#about"
                   onClick={() => handlePageChange("About")}
-                  //  TODO: Add a comment explaining what this logic is doing
-
                   className={
                     currentPage === "About" ? "nav-link active" : "nav-link"
                   }
@@ -51,11 +55,10 @@ function NavTabs({ currentPage, handlePageChange }) {
                 </a>
               </li>
               <li className="nav-item">
+                {/* portfolio button */}
                 <a
                   href="#portfolio"
                   onClick={() => handlePageChange("Portfolio")}
-                  //  TODO: Add a comment explaining what this logic is doing
-
                   className={
                     currentPage === "Portfolio" ? "nav-link active" : "nav-link"
                   }
@@ -64,10 +67,9 @@ function NavTabs({ currentPage, handlePageChange }) {
                 </a>
               </li>
               <li className="nav-item">
+                {/* contact button */}
                 <a
                   href="#contact"
-                  //  TODO: Add a comment explaining what this logic is doing
-
                   onClick={() => handlePageChange("Contact")}
                   className={
                     currentPage === "Contact" ? "nav-link active" : "nav-link"
@@ -77,10 +79,9 @@ function NavTabs({ currentPage, handlePageChange }) {
                 </a>
               </li>
               <li className="nav-item">
+                {/* resume button */}
                 <a
                   href="#resume"
-                  //  TODO: Add a comment explaining what this logic is doing
-
                   onClick={() => handlePageChange("Resume")}
                   className={
                     currentPage === "Resume" ? "nav-link active" : "nav-link"
