@@ -55,6 +55,7 @@
 }
 
 .gallery_product:hover .image {
+  transition: 0.7s ease;
   opacity: 0.2;
 }
 
