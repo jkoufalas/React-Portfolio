@@ -96,7 +96,7 @@ export default function Contact() {
       transition={{ duration: 0.7 }}
     >
       <div className="pageContainer">
-        <div className="container contact-form">
+        <div className="contact-form">
           {/* sets up the form */}
           <span className="heading">Contact</span>
           <form className="form d-flex">

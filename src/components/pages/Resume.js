@@ -12,11 +12,11 @@ export default function Resume() {
       transition={{ duration: 0.7 }}
     >
       <div className="pageContainer">
+        {/* this page just holds the resume content */}
+        <span className="heading">Resume</span>
+        <br />
+        <br />
         <div className="container">
-          {/* this page just holds the resume content */}
-          <span className="heading">Resume</span>
-          <br />
-          <br />
           <span className="resume">
             Download my&nbsp;
             <a className="download-link" href={locationResume} download>
@@ -48,9 +48,9 @@ export default function Resume() {
             <li>Bootstrap</li>
             <li>Handlebars</li>
           </ul>
-          <br />
-          <br />
         </div>
+        <br />
+        <br />
       </div>
     </motion.div>
   );
