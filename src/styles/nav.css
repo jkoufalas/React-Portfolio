@@ -22,6 +22,10 @@ header {
   text-align: center;
 }
 
+.pageContainer {
+  transition: 0.5s ease-in-out;
+}
+
 /* The title that includes my name on the left of the header */
 header h1 {
   position: relative;

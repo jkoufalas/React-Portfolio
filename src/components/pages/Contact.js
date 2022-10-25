@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
 import "../../styles/form.css";
+import { motion } from "framer-motion";
+
 //setup imports
 
 export default function Contact() {
@@ -87,53 +89,62 @@ export default function Contact() {
   };
 
   return (
-    <div className="container contact-form">
-      {/* sets up the form */}
-      <span className="heading">Contact</span>
-      <form className="form d-flex">
-        <div className="row justify-content-center">
-          <label>Name:</label>
-          <input
-            value={name}
-            name="name"
-            onChange={handleInputChange}
-            onBlur={handleLoseFocus}
-            type="text"
-            placeholder="name"
-            id="name"
-          />
-          <label>Email:</label>
-          <input
-            value={email}
-            name="email"
-            onChange={handleInputChange}
-            onBlur={handleLoseFocus}
-            type="email"
-            placeholder="email"
-          />
-          <label>Message:</label>
-          <textarea
-            value={message}
-            name="message"
-            onChange={handleInputChange}
-            onBlur={handleLoseFocus}
-            type="textarea"
-            placeholder="message"
-          />
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.7 }}
+    >
+      <div className="pageContainer">
+        <div className="container contact-form">
+          {/* sets up the form */}
+          <span className="heading">Contact</span>
+          <form className="form d-flex">
+            <div className="row justify-content-center">
+              <label>Name:</label>
+              <input
+                value={name}
+                name="name"
+                onChange={handleInputChange}
+                onBlur={handleLoseFocus}
+                type="text"
+                placeholder="name"
+                id="name"
+              />
+              <label>Email:</label>
+              <input
+                value={email}
+                name="email"
+                onChange={handleInputChange}
+                onBlur={handleLoseFocus}
+                type="email"
+                placeholder="email"
+              />
+              <label>Message:</label>
+              <textarea
+                value={message}
+                name="message"
+                onChange={handleInputChange}
+                onBlur={handleLoseFocus}
+                type="textarea"
+                placeholder="message"
+              />
+            </div>
+          </form>
+          {/* error message displays when there is a problem */}
+          {errorMessage && (
+            <div>
+              <p className="error-text">{errorMessage}</p>
+            </div>
+          )}
+          {/* form submit */}
+          <button type="button" onClick={handleFormSubmit}>
+            Submit
+          </button>
+          <br />
+          <br />
         </div>
-      </form>
-      {/* error message displays when there is a problem */}
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
-      {/* form submit */}
-      <button type="button" onClick={handleFormSubmit}>
-        Submit
-      </button>
-      <br />
-      <br />
-    </div>
+      </div>
+    </motion.div>
   );
 }

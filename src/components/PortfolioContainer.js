@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
+import { AnimatePresence } from "framer-motion";
 //setting up imports and components
 
 export default function PortfolioContainer() {
@@ -28,12 +29,14 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
-      {/* We are passing the current page state and the handler to change it*/}
-      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* This runs the method where it uses the state variable to render the page */}
-      {renderPage()}
-      <Footer />
-    </div>
+    <AnimatePresence exitBeforeEnter>
+      <div>
+        {/* We are passing the current page state and the handler to change it*/}
+        <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+        {/* This runs the method where it uses the state variable to render the page */}
+        {renderPage()}
+        <Footer />
+      </div>
+    </AnimatePresence>
   );
 }
