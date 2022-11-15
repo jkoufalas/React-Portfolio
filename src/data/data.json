@@ -1,5 +1,21 @@
 [
   {
+    "project_name": "BrewHaHa",
+    "github_link": "https://github.com/jkoufalas/BrewHaha",
+    "demo_image": "/Images/BrewHaha.png",
+    "deployed_link": "https://murmuring-reef-81565.herokuapp.com/",
+    "skills": [
+      "React",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB/Mongoose",
+      "graphql",
+      "Chakra UI",
+      "JSON Web Tokens",
+      "Stripe"
+    ]
+  },
+  {
     "project_name": "CodeIt",
     "github_link": "https://github.com/jkoufalas/codeIt",
     "demo_image": "/Images/codeIt.png",
