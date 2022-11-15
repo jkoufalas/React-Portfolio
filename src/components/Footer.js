@@ -14,12 +14,8 @@ export default function Footer() {
           <FontAwesomeIcon icon={faGithub} />
         </a>
         &nbsp; &nbsp;
-        <a href="https://www.linkedin.com/in/john-koufalas-0a6a40239/">
+        <a href="https://www.linkedin.com/in/john-koufalas/">
           <FontAwesomeIcon icon={faLinkedin} />
-        </a>
-        &nbsp; &nbsp;
-        <a href="https://twitter.com/Hisimo171">
-          <FontAwesomeIcon icon={faTwitter} />
         </a>
       </footer>
     </div>
